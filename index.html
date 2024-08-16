@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+        </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Movie-Movie</title>
+</head>
+<body>
+    <div class="container flex flex-col flex-gap poppins-regular">
+        <img src="hero.png" class="page-title">
+
+        <form class="flex flex-gap">
+        <input type="text" placeholder="Enter Movie Name" class="user-input-movie poppins-regular">
+        <button class="btn poppins-medium search-btn">Search</button>
+        </form> 
+
+        <div class="loading"></div>
+
+        <p class="helper-text">Search Your Favorite Movie Here!</p>
+
+        <div class="results flex flex-wrap poppins-medium"></div>
+
+        <div class="error-text">Nothing to Show. Try Again!</div>
+
+        <div class="bottom-btn flex-gap flex flex-col">
+        <button class="btn show-more-button poppins-medium">Show More</button>
+        <button class="btn scroll-to-top-button poppins-medium">Scroll to top</button>
+        </div>
+    </div>
+    <div class="card poppins-regular"></div>
+    <script src="script.js"></script>
+</body>
+</html>
